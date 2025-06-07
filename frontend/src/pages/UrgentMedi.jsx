@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from 'react';
-import AppContext from '../context/appContext';
+import AppContext from '../context/AppContext.js';
 import { FaExclamationTriangle } from 'react-icons/fa';
 import { FiSearch } from 'react-icons/fi';
 import { useReactToPrint } from 'react-to-print';
