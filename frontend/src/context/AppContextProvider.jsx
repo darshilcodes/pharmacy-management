@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import AppContext from "./appContext.js";
+import AppContext from "./AppContext.js";
 import axios from 'axios';
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
