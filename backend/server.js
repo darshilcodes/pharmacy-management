@@ -12,7 +12,7 @@ connectDB();
 const allowedOrigins = [
   'http://localhost:3000',   // For development
   'http://localhost:3001',   // Your actual frontend dev port
-  'https://pharmacy-management-lac9-k8aaqxan4-darshilcodes-projects.vercel.app/' // ✅ Your deployed frontend
+  'https://pharmacy-management-lac9-k8aaqxan4-darshilcodes-projects.vercel.app' // ✅ Your deployed frontend
 ];
 
 app.use(cors({
