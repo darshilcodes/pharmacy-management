@@ -2,7 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AppContext from "../context/appContext";
+import AppContext from "../context/AppContext.js";
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useContext, useState } from 'react';
-import AppContext from '../context/appContext';
+import AppContext from '../context/AppContext.js';
 import { toast } from 'react-toastify';
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL;

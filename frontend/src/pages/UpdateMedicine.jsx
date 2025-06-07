@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import AppContext from "../context/appContext";
+import AppContext from "../context/AppContext.js";
 import Select from "react-select";
 import axios from 'axios'
 import { toast } from "react-toastify";

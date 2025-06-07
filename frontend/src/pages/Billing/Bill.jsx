@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect, useRef } from "react";
-import AppContext from "../../context/appContext";
+import AppContext from "../../context/AppContext.js";
 import AvailableMedicines from "./AvailableMedicines";
 import BillSummary from "./BillSummary";
 import axios from "axios";

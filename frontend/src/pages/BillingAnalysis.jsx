@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useContext, useEffect, useRef, useState } from 'react';
-import AppContext from '../context/appContext';
+import AppContext from '../context/AppContext.js';
 import { useReactToPrint } from 'react-to-print';
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL;

@@ -13,7 +13,7 @@ import {
   FaFileInvoiceDollar,
   FaUserMd
 } from 'react-icons/fa';
-import AppContext from '../context/appContext';
+import AppContext from '../context/AppContext.js';
  
 
 const Sidebar = () => {
