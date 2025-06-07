@@ -4,12 +4,22 @@ import connectDB from './config/db.js';
 import cors from 'cors'
 import phRouter from './routers/phRouter.js';
 import medicineRouter from './routers/medicineRouter.js';
- 
+
 dotenv.config();
 const app = express();
 connectDB();
 
-app.use(cors());
+const allowedOrigins = [
+  'http://localhost:3000',   // For development
+  'http://localhost:3001',   // Your actual frontend dev port
+  'https://pharmacy-management-15kk.onrender.com' // ✅ Your deployed frontend
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, // If you send cookies or auth headers
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
