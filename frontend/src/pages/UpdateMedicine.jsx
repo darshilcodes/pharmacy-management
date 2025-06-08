@@ -66,7 +66,7 @@ const UpdateMedicine = () => {
             alert("Please select a medicine to update.");
             return;
         }
-        updateMedicine();
+        await updateMedicine();
         setSelectedMedicineOption(null);
         setFormData({
         name: "",
