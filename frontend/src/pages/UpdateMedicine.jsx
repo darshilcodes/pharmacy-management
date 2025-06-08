@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 const UpdateMedicine = () => {
-    const { medicines ,token} = useContext(AppContext);
+    const { medicines, token, getMedi} = useContext(AppContext);
     const [formData, setFormData] = useState({
         name: "",
         batchNumber: "",
@@ -68,17 +68,17 @@ const UpdateMedicine = () => {
         }
         updateMedicine();
         setSelectedMedicineOption(null);
-  setFormData({
-    name: "",
-    batchNumber: "",
-    manufacturer: "",
-    expiryDate: "",
-    quantity: "",
-    pricePerUnit: "",
-    category: "",
-  });
-  setIsSelected(false);
-getMedi()
+        setFormData({
+        name: "",
+        batchNumber: "",
+        manufacturer: "",
+        expiryDate: "",
+        quantity: "",
+        pricePerUnit: "",
+        category: "",
+        });
+        setIsSelected(false);
+        await getMedi();
     };
 
 const updateMedicine = async () => {
