@@ -60,7 +60,7 @@ const UpdateMedicine = () => {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!isSelected) {
             alert("Please select a medicine to update.");
